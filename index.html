@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Battle</title>
+</head>
+<body>
+    <div id="app">
+        <div id="arena">
+            <div id="hero-card">
+                <div id="hero-stats">
+                    <div id="hero-strength">
+                        <div>
+                            <!-- The strength bar displays here -->
+                        </div>
+                    </div>
+                    <div id="hero-intelligence">
+                        <div>
+                            <!-- The intelligence bar displays here -->
+                        </div>
+                    </div>
+
+                    <div id="hero-agility">
+                        <div>
+                            <!-- The agility bar displays here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hero-img">
+                    <img src="./heroes/Iron Man.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div id="versus">
+                <span id="hero-name">Iron Man</span>
+                <img src="./versus.png" alt="versus" >
+                <span id="villain-name">Thanos</span>
+            </div>
+
+            <div id="villain-card">
+                <div id="villain-stats">
+                    <div id="villain-strength">
+                        <div>
+                            <!-- The strength bar displays here -->
+                        </div>
+                    </div>
+                    <div id="villain-intelligence">
+                        <div>
+                            <!-- The intelligence bar displays here -->
+                        </div>
+                    </div>
+
+                    <div id="villain-agility">
+                        <div>
+                            <!-- The agility bar displays here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="villain-img">
+                    <img src="./villains/Thanos.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="actions">
+            <button id="fight"onclick="checkFightDecision()">Fight</button>
+            <button id="run"onclick="checkRunDecision()">Run</button>
+        </div>
+        
+    </div>
+    <div id ="count-down">10</div>
+    <div id="hearts" style="color:aqua;">💔💔💔💔</div>
+
+    <script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="game-over">
+        <h1>GAME OVER</h1>
+        <!-- /h<h1 style="color: red;"> Game over looser <1> -->
+        <p> You loose ...lol😂😂🤣 <a href="index.html" class="try-btn">TRY AGAIN</a></p>
+    <p id="score"></p>
+    </div>
+</body>
+<script>
+    document.getElementById("score").textContent=`Your score: ${localStorage.getItem('score')}`
+</script>
+
+</html>

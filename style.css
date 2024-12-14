@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Background.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.571);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#app {
+    max-width: 800px;
+}
+
+#arena {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+#versus {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.323);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+#versus {
+    color: #fefefe;
+    font-size: 42px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.485);
+}
+
+#versus img {
+    width: 100px;
+}
+
+#hero-img img, #villain-img img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid rgb(237, 71, 71);
+}
+
+#hero-img img {
+    border-color: rgb(116, 227, 116);
+}
+
+#hero-stats, #villain-stats {
+    background-color: rgb(116, 227, 116);
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    border-radius: 30px 0px;
+    
+}
+
+#villain-stats {
+    background-color: rgb(237, 71, 71);
+}
+
+#hero-stats > div, #villain-stats > div {
+    height:fit-content;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 0px;
+    border: 1px solid;
+    display: flex;
+    
+}
+
+#villain-stats > div {
+    justify-content: flex-end;
+}
+
+#hero-stats > div > div, #villain-stats > div > div {
+    background-color: #52b1ff;
+    height: 100%;
+    width: 50%;
+    border-radius: 30px 0px;
+    padding: 5px;
+    
+}
+
+#actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#actions button {
+    padding: 10px;
+    width: 200px;
+    border-radius: 0px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition:.5s all;
+}
+
+#fight:hover {
+    background-color: rgb(116, 227, 116); 
+    color: #fefefe;  
+}
+
+
+#run:hover {
+    background-color: rgb(191, 176, 44); 
+    color: #fefefe;  
+}
+#count-down{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border: 2px solid red;
+    font-size: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+#hearts{
+    width:fit-content;
+    height: 50px;
+    /* background-color: aqua;
+    border: 2px solid red; */
+    font-size: 24px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.game-over{
+    background-color: #fefefe;
+    width: 400px;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+.try-btn{
+    border-radius: 10px;
+    background-color: yellowgreen;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
